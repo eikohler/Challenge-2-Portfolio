@@ -1,0 +1,105 @@
+/* Sets the initial behavior for all the elements, box-sizing, scroll behaviour, spacing, etc. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Sets the bg color of the site to a grey color*/
+body {
+    background-color: #d9dcd6;    
+}
+
+/* Sets the color of links to white with no underline */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Sets the font-size of all paragraph elements to 16px */
+p {
+    font-size: 16px;
+}
+
+/* Sets the header semantic tag font, padding, bg color and color -> at the top of the page */
+header{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000;
+    color: #ffffff;
+}
+
+/* Sets the h1 'site title' to be 48px inline-block within the header */
+header h1{
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Changes the color of the 'seo' text within the h1 in the header tag to be a darker grey */
+header h1 span{
+    color: #d9dcd6;
+}
+
+/* Sets the styling for the navigation semantic tag within the header */
+header nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Removes the bullets on the unordered list element */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Inline-block orders the list items to be in the same row together with a spacing of 25px */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Sets the bg image of the figure semantic tag for the hero banner along with other styling -> below the header*/
+figure {
+    height: 520px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url("../images/recordcollection.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #000;    
+    position: relative;
+}
+
+figure section{
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    display: inline-block;
+    background-color: #b7048bcc;
+    font-family: 'Lato', sans-serif;
+    transition: 0.2s all;
+}
+
+figure section p{
+    font-size: 20px;
+    opacity: 0;
+    margin-top: -20px;
+    transition: 0.2s all;
+    text-align: center;
+}
+
+figure section:hover p{
+    opacity: 1;
+    margin-top: 0px;    
+}
+
+figure section:hover{
+    background-color: #ff00c1cc;
+}
+
+
